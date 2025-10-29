@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 import { Provider, useDispatch, useSelector } from "react-redux";
 import { configureStore, createSlice, createSelector } from "@reduxjs/toolkit";
 import { ShoppingCart } from "lucide-react";
@@ -356,7 +356,7 @@ function Shell({ children }) {
 
 function RouterApp() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Shell>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -364,7 +364,7 @@ function RouterApp() {
           <Route path="/cart" element={<CartPage />} />
         </Routes>
       </Shell>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
