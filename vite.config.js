@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // Example: base: '/leafy-lane/'
 export default defineConfig({
   plugins: [react()],
-  // base: '/leafy-lane/',
+  base: '/leafy-lane/',
 })
